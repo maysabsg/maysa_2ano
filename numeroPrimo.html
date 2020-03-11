@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title> Números Primos </title>
+   <script>
+     
+	  function primos ()
+	{
+	   var x= document.getElementById("num").value;
+	   var y= 0;
+	   for (i=0; i<=x; i++)
+	   {
+	   z=x%i;
+	   if (z==0)
+	    y=y+1;
+	   }
+	   if (y==2)
+	    n= " e primo";
+	   else
+	    n= " nao e primo";
+		
+		resposta= x + n;
+		document.getElementById("result").innerHTML=resposta;
+	}
+		
+		 </script>
+    </head>
+	<body>
+	<h1 id="result"></h1>
+	<input type="number" id="num"/>
+	<button onclick="javascript:primos()"> E VAMOS DE</button>
+	</body>
+	</html>
